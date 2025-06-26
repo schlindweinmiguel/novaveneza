@@ -1,151 +1,67 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #ffffff;
-    color: #2d3e2f;
-    line-height: 1.6;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.button {
-    display: inline-block;
-    padding: 12px 24px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: all 0.3s ease-in-out;
-}
-
-.button.primary {
-    background-color: #4CAF50;
-    color: #fff;
-    border: 2px solid #4CAF50;
-}
-
-.button.primary:hover {
-    background-color: #45a049;
-    transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
-}
-
-.section-title {
-    font-size: 2.5em;
-    color: #388e3c;
-    text-align: center;
-    margin-bottom: 30px;
-    position: relative;
-    padding-bottom: 15px;
-}
-
-.section-title::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 3px;
-    background-color: #388e3c;
-}
-
-/* Header */
-.site-header {
-    background-color: #388e3c;
-}
-
-.site-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.main-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.main-nav a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-}
-
-.main-nav a:hover {
-    color: #c8e6c9;
-}
-
 /* Hero Section */
 .hero {
-    background: url('ground.png') center/cover no-repeat;
+    background: url('hero-image.jpg') center/cover no-repeat;
     color: #fff;
-    padding: 100px 20px;
+    padding: 120px 20px;
     text-align: center;
 }
 
-.hero-title {
+.hero h1 {
     font-size: 3em;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.hero-subtitle {
+.hero p {
     font-size: 1.5em;
     margin-bottom: 30px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
-/* Conteúdo de Seções */
-section {
+/* Imagens da Comunidade */
+.community-images {
     padding: 50px 20px;
-    background-color: #fff;
-    margin-bottom: 20px;
-    border-radius: 12px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-section:nth-child(even) {
     background-color: #f0f9f3;
 }
 
-ul {
-    padding-left: 20px;
+.image-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-ul li {
-    margin-bottom: 10px;
+.image-gallery img {
+    width: 32%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* Call to Action */
-.call-to-action {
-    background-color: #388e3c;
-    color: #333;
-    padding: 80px 20px;
-    text-align: center;
-    background-image: linear-gradient(45deg, rgba(76, 175, 80, 0.8), rgba(56, 142, 60, 0.8));
-    background-blend-mode: overlay;
-}
-
-.call-to-action h2 {
-    font-size: 2.5em;
+/* Horários e Eventos */
+.schedule, .upcoming-events, .festa-padroeiro {
+    padding: 50px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     margin-bottom: 20px;
 }
 
-.call-to-action p {
+.schedule ul, .upcoming-events ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.schedule li, .upcoming-events li {
+    margin-bottom: 10px;
     font-size: 1.2em;
-    margin-bottom: 30px;
+}
+
+.festa-padroeiro .event-details ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.festa-padroeiro li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
 }
 
 /* Footer */
@@ -155,53 +71,4 @@ ul li {
     text-align: center;
     padding: 20px 0;
     font-size: 0.9em;
-}
-
-
-@media (max-width: 480px) {
-    .hero-title {
-        font-size: 1.8em;
-    }
-
-    .hero-subtitle {
-        font-size: 1em;
-    }
-
-    .button {
-        padding: 10px 20px;
-        font-size: 0.9em;
-    }
-
-    .section-title {
-        font-size: 2em;
-    }
-    }
-
-@media (max-width: 768px) {
-  .main-nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .main-nav li {
-    margin: 10px 0;
-  }
-
-  .container {
-    padding: 10px;
-  }
-
-  iframe {
-    width: 100% !important;
-    height: auto;
-  }
-
-  h1, h2 {
-    font-size: 1.5em;
-    text-align: center;
-  }
-
-  p, li {
-    font-size: 1em;
-  }
 }
