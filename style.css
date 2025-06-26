@@ -1,3 +1,65 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #2d3e2f;
+    line-height: 1.6;
+}
+
+/* Container para centralizar o conteúdo */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.site-header {
+    background-color: #388e3c;  /* Cor de fundo verde */
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave para dar profundidade */
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header .logo img {
+    height: 50px;  /* Defina a altura do logo */
+    width: auto;
+}
+
+/* Navegação */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #fff;  /* Cor branca para os links */
+    font-weight: bold;
+    font-size: 1.1em;
+    text-transform: uppercase;  /* Deixa os links em maiúsculas */
+    transition: color 0.3s ease-in-out;
+}
+
+/* Efeito hover no menu */
+.main-nav a:hover {
+    color: #c8e6c9;  /* Cor mais clara ao passar o mouse */
+    text-decoration: underline;  /* Sublinha o link ao passar o mouse */
+}
+
 /* Hero Section */
 .hero {
     background: url('hero-image.jpg') center/cover no-repeat;
@@ -71,4 +133,33 @@
     text-align: center;
     padding: 20px 0;
     font-size: 0.9em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .site-header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .main-nav a {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    .image-gallery {
+        flex-direction: column;
+    }
+
+    .image-gallery img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
