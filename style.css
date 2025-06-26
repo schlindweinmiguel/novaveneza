@@ -50,7 +50,6 @@ body {
     color: #fff;  /* Cor branca para os links */
     font-weight: bold;
     font-size: 1.1em;
-    text-transform: uppercase;  /* Deixa os links em maiúsculas */
     transition: color 0.3s ease-in-out;
 }
 
