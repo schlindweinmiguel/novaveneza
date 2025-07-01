@@ -22,7 +22,7 @@ body {
 
 /* Header */
 .site-header {
-    background-color: #388e3c;  /* Cor de fundo verde */
+    background-color: #6495ED;  /* Cor de fundo azul */
     padding: 20px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave para dar profundidade */
 }
