@@ -3,15 +3,19 @@
 /* Novos estilos adicionados */
 .secao {
     border-top: 2px solid #ccc;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 40px 20px;
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 .titulo-secao {
     text-align: center;
     text-decoration: underline;
-    font-size: 24px;
-    margin-bottom: 15px;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2d3e2f;
 }
 
 .conteudo-imagens {
@@ -25,6 +29,52 @@
     width: 100%;
     max-width: 400px;
     border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.lista-horarios span {
+    font-weight: bold;
+    color: #1b5e20;
+    display: inline-block;
+    width: 120px;
+}
+
+.lista-horarios li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    background-color: #e8f5e9;
+    border-radius: 6px;
+}
+
+.lista-eventos li {
+    background-color: #fff3e0;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.destaque {
+    background-color: #eef7f0;
+}
+
+.botao-destaque {
+    background-color: #2e7d32;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.botao-destaque:hover {
+    background-color: #1b5e20;
 }
 
 /* Reset básico */
@@ -124,54 +174,6 @@ body {
     width: 32%;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-/* Horários e Eventos */
-.schedule, .upcoming-events, .festa-padroeiro {
-    padding: 50px 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    margin-bottom: 20px;
-}
-
-.schedule ul, .upcoming-events ul {
-    list-style: none;
-    padding-left: 20px;
-}
-
-.schedule li, .upcoming-events li {
-    margin-bottom: 10px;
-    font-size: 1.2em;
-}
-
-.festa-padroeiro .event-details ul {
-    list-style: none;
-    padding-left: 20px;
-}
-
-.festa-padroeiro li {
-    margin-bottom: 10px;
-    font-size: 1.2em;
-}
-
-/* Call to Action */
-.call-to-action {
-    background-color: #388e3c;
-    color: #333;
-    padding: 80px 20px;
-    text-align: center;
-    background-image: linear-gradient(45deg, rgba(76, 175, 80, 0.8), rgba(56, 142, 60, 0.8));
-    background-blend-mode: overlay;
-}
-
-.call-to-action h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.call-to-action p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
 }
 
 /* Footer */
