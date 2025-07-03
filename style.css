@@ -1,3 +1,32 @@
+/* Estilos originais (adicione os seus aqui, se houver) */
+
+/* Novos estilos adicionados */
+.secao {
+    border-top: 2px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.titulo-secao {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.conteudo-imagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.conteudo-imagens img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
 /* Reset básico */
 * {
     margin: 0;
@@ -144,7 +173,6 @@ body {
     font-size: 1.2em;
     margin-bottom: 30px;
 }
-
 
 /* Footer */
 .site-footer {
