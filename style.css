@@ -141,8 +141,7 @@ body {
 
 /* Header */
 .site-header {
-    background-color: #94e9cd;  /* Cor de fundo verde */
-    padding: 20px 0;
+background: radial-gradient(circle,rgba(82, 176, 77, 1) 0%, rgba(148, 233, 205, 1) 100%);    padding: 20px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave para dar profundidade */
 }
 
