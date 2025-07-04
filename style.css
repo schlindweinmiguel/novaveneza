@@ -141,7 +141,7 @@ body {
 
 /* Header */
 .site-header {
-    background-color: rgba(34,135,66,1)  /* Cor de fundo verde */
+    background-color: #C2D4BE  /* Cor de fundo verde */
     padding: 20px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave para dar profundidade */
 }
