@@ -141,7 +141,7 @@ body {
 
 /* Header */
 .site-header {
-background: background: linear-gradient(90deg,rgba(74, 110, 29, 1) 0%, rgba(40, 148, 126, 1) 55%, rgba(29, 110, 64, 1) 100%);    padding: 20px 0;
+background: linear-gradient(90deg,rgba(74, 110, 29, 1) 0%, rgba(40, 148, 126, 1) 55%, rgba(29, 110, 64, 1) 100%);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave para dar profundidade */
 }
 
