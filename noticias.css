@@ -35,6 +35,26 @@ h2 {
     border-bottom: 2px solid #ccc;
     padding-bottom: 5px;
 }
+/* Navegação */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #fff;  /* Cor branca para os links */
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Efeito hover no menu */
+.main-nav a:hover {
+    color: #c8e6c9;  /* Cor mais clara ao passar o mouse */
+    text-decoration: underline;  /* Sublinha o link ao passar o mouse */
+}
 
 .card {
     background-color: #fff;
