@@ -1,0 +1,29 @@
+.localizacao-section {
+    padding: 2em 0;
+    background-color: #f9f9f9;
+}
+
+.localizacao-section h2 {
+    color: #2a4d69;
+    margin-top: 1em;
+}
+
+.info-localizacao, .mapa-localizacao, .como-chegar {
+    margin-bottom: 2em;
+}
+
+.mapa-iframe {
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.como-chegar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.como-chegar li {
+    padding: 0.5em 0;
+    font-size: 1.1em;
+}
