@@ -3,78 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Sobre a Comunidade Nova Veneza</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Sobre a Comunidade</title>
+    <link rel="stylesheet" href="sobre.css">
 </head>
 <body>
 
-      <!-- Cabeçalho -->
-
-  <header class="site-header">
-        <div class="container">
-            <div class="logo">
-                <img src="logo.png" alt="Logo da Comunidade Nova Veneza">
-            </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre a Comunidade</a></li>
-                    <li><a href="sobrenos.html">Eventos</a></li>
-                    <li><a href="contato.html">Notícias</a></li>
-                    <li><a href="construcao.html">Serviços</a></li>
-                    <li><a href="projeto.html">Comércio Local</a></li>
-                    <li><a href="projeto.html">Turismo</a></li>
-                </ul>
+    <!-- Cabeçalho padrão -->
+    <header class="site-header">
+        <div class="container-header">
+            <h1>Comunidade Nova Veneza</h1>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="eventos.html">Eventos</a>
+                <a href="noticias.html">Notícias</a>
+                <a href="sobre.html" class="ativo">Sobre</a>
+                <a href="contato.html">Contato</a>
             </nav>
         </div>
     </header>
 
-      <!-- Imagem Principal -->
+    <main class="container">
 
-    <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h2 class="hero-title">Um pouco sobre a Comunidade</h2>
+        <!-- Seção de Introdução -->
+        <section class="intro">
+            <div class="texto">
+                <h2>História e Tradição</h2>
+                <p>
+                    Fundada no final do século XIX por imigrantes italianos da região do Vêneto, a Comunidade Nova Veneza é um lugar onde a tradição se mantém viva.
+                    Aqui, a culinária típica, o dialeto talian, a hospitalidade e a arquitetura histórica se misturam, criando um cenário único e acolhedor.
+                </p>
+                <p>
+                    Ao longo das décadas, a comunidade preservou festas tradicionais, como a Festa da Gastronomia Típica Italiana,
+                    além de pontos turísticos marcantes que atraem visitantes de todo o Brasil.
+                </p>
+            </div>
+            <div class="imagem">
+                <img src="imagens/comunidade1.jpg" alt="Vista panorâmica da comunidade">
+            </div>
+        </section>
+
+        <!-- Galeria -->
+        <section class="galeria">
+            <h2>Galeria de Imagens</h2>
+            <div class="grid-imagens">
+                <img src="imagens/festa.jpg" alt="Festa da comunidade">
+                <img src="imagens/paisagem.jpg" alt="Paisagem local">
+                <img src="imagens/evento.jpg" alt="Evento cultural">
+                <img src="imagens/igreja.jpg" alt="Igreja local">
+                <img src="imagens/gondola.jpg" alt="Gôndola na praça central">
+                <img src="imagens/portico.jpg" alt="Pórtico de entrada">
+            </div>
+        </section>
+
+        <!-- Pontos turísticos -->
+        <section class="pontos">
+            <h2>Pontos Turísticos</h2>
+            <ul>
+                <li><strong>Pórtico de entrada</strong> – Construído em pedra basalto, recebe os visitantes com um toque histórico.</li>
+                <li><strong>Gôndola Veneziana</strong> – Símbolo da ligação cultural com a Itália.</li>
+                <li><strong>Casas de Pedra</strong> – Construções preservadas como patrimônio histórico.</li>
+                <li><strong>Igreja Matriz</strong> – Um dos cartões-postais da comunidade.</li>
+                <li><strong>Santuário de Nossa Senhora de Caravaggio</strong> – Importante destino religioso e de romarias.</li>
+            </ul>
+        </section>
+
+        <!-- Curiosidades -->
+        <section class="curiosidades">
+            <h2>Curiosidades</h2>
+            <div class="cards-curiosidades">
+                <div class="card">
+                    <h3>Tradições</h3>
+                    <p>Mais de 95% dos moradores são descendentes de italianos.</p>
+                </div>
+                <div class="card">
+                    <h3>Gastronomia</h3>
+                    <p>Capital Nacional da Gastronomia Típica Italiana.</p>
+                </div>
+                <div class="card">
+                    <h3>Natureza</h3>
+                    <p>A região possui rios e cachoeiras de água cristalina.</p>
                 </div>
             </div>
         </section>
 
- <style>
-h1 {
-  text-align: center;
-  text-decoration: underline;
-  text-underline-offset: 4px; /* Ajusta a distância do sublinhado */
-}
-</style>
-<h1>Sobre a Comunidade</h1>
-    <main class="container">
-        <h2>Eventos da Comunidade</h2>
-
-      
-
-        <section class="evento">
-            <p>A Comunidade Nova Veneza é um lugar encantador, onde a tradição e a modernidade caminham lado a lado. Localizada em meio às paisagens verdejantes do interior, nossa comunidade é conhecida pela hospitalidade calorosa de seu povo, pela cultura viva e pelas celebrações que mantêm viva a essência de nossos antepassados.</p>
+        <!-- Mapa -->
+        <section class="mapa">
+            <h2>Onde Estamos</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.671140122456!2d-53.8089487!3d-25.6593364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f123e9b83b2be9%3A0xf93e7166e47f1f7f!2sCapela%20S%C3%A3o%20Crist%C3%B3v%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1718629400000!5m2!1spt-BR!2sbr" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
 
-        <section class="evento">
-            <p>Fundada por famílias de origem italiana, Nova Veneza carrega em seu nome a homenagem à famosa cidade de Veneza, refletindo o orgulho por suas raízes. Aqui, a simplicidade da vida no campo se mistura com iniciativas inovadoras voltadas ao desenvolvimento sustentável e à valorização da agricultura familiar.</p>
+        <!-- Chamada para ação -->
+        <section class="associe-se">
+            <h2>Faça Parte da Nossa História!</h2>
+            <p>Associe-se à Comunidade Nova Veneza e ajude a preservar nossa cultura e tradições.</p>
+            <a href="formulario.html" class="btn-associar">Quero me associar</a>
         </section>
-        
-        <section class="evento">
-            <p>A capela no centro da comunidade, os jardins bem cuidados, as festas típicas com comidas artesanais e músicas tradicionais tornam Nova Veneza um exemplo de união, fé e amor pela terra. É um lugar onde o tempo parece passar mais devagar, permitindo que cada momento seja vivido com mais intensidade e significado.</p>
-        </section>    
-        
-        <section class="evento">
-            <p>Com projetos comunitários que envolvem jovens, adultos e idosos, a Comunidade Nova Veneza acredita na força da coletividade e no poder da educação, da cultura e da solidariedade como caminhos para um futuro melhor. É mais do que um lugar no mapa – é um lar no coração de todos que aqui vivem e participam.</p>
-        </section>
-
 
     </main>
-  <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2025 Comunidade Nova Veneza. Todos os direitos reservados.</p>
-        </div>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; 2025 Comunidade Nova Veneza - Todos os direitos reservados.</p>
     </footer>
+
 </body>
 </html>
-    
