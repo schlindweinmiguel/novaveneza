@@ -5,106 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre a Comunidade</title>
     <link rel="stylesheet" href="sobre.css">
+    <link rel="stylesheet" href="style.css"> <!-- Importa estilo global do index -->
 </head>
 <body>
 
-    <!-- Cabeçalho padrão -->
+    <!-- Header (igual ao index.html) -->
     <header class="site-header">
-        <div class="container-header">
-            <h1>Comunidade Nova Veneza</h1>
-            <nav>
-                <a href="index.html">Início</a>
-                <a href="eventos.html">Eventos</a>
-                <a href="noticias.html">Notícias</a>
-                <a href="sobre.html" class="ativo">Sobre</a>
-                <a href="contato.html">Contato</a>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo da Comunidade Nova Veneza">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html" class="active">Sobre</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="localizacao.html">Localização</a></li>
+                    <li><a href="formulario.html">Contato</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
-    <main class="container">
+    <!-- Seção sobre a comunidade -->
+    <section class="sobre">
+        <div class="container">
+            <h1>Sobre a Comunidade Nova Veneza</h1>
+            <p>
+                A comunidade Nova Veneza é formada por pessoas unidas, que valorizam sua história e cultura.
+                Nosso objetivo é fortalecer os laços entre moradores e visitantes.
+            </p>
+        </div>
+    </section>
 
-        <!-- Seção de Introdução -->
-        <section class="intro">
-            <div class="texto">
-                <h2>História e Tradição</h2>
-                <p>
-                    Fundada no final do século XIX por imigrantes italianos da região do Vêneto, a Comunidade Nova Veneza é um lugar onde a tradição se mantém viva.
-                    Aqui, a culinária típica, o dialeto talian, a hospitalidade e a arquitetura histórica se misturam, criando um cenário único e acolhedor.
-                </p>
-                <p>
-                    Ao longo das décadas, a comunidade preservou festas tradicionais, como a Festa da Gastronomia Típica Italiana,
-                    além de pontos turísticos marcantes que atraem visitantes de todo o Brasil.
-                </p>
-            </div>
-            <div class="imagem">
-                <img src="imagens/comunidade1.jpg" alt="Vista panorâmica da comunidade">
-            </div>
-        </section>
+    <!-- Botão Quero me Associar -->
+    <section class="associar">
+        <div class="container">
+            <h2>Faça parte da comunidade</h2>
+            <a href="formulario.html" class="btn">Quero me associar</a>
+        </div>
+    </section>
 
-        <!-- Galeria -->
-        <section class="galeria">
-            <h2>Galeria de Imagens</h2>
-            <div class="grid-imagens">
-                <img src="festa.jpg" alt="Festa da comunidade">
-                <img src="paisagem.jpg" alt="imagem Paisagem local">
-                <img src="evento.jpg" alt="imagem evento">
+    <!-- Galeria (permanece no mesmo lugar original) -->
+    <section class="galeria">
+        <div class="container">
+            <h2>Galeria da Comunidade</h2>
+            <div class="galeria-grid">
+                <img src="estrada.jpg" alt="Estrada da comunidade">
+                <img src="evento.jpg" alt="Evento da comunidade">
                 <img src="igrejas.jpg" alt="Igreja local">
-                <img src="estrada.jpg" alt="imagem da estrada">
-                <img src="ponto.jpg" alt="Ponto de onibus">
+                <img src="fundo.jpg" alt="Vista da comunidade">
+                <img src="rio.png" alt="Rio da comunidade">
+                <img src="balneario-kau.jpg" alt="Balneário Kau">
             </div>
-        </section>
-
-        <!-- Pontos turísticos -->
-        <section class="pontos">
-            <h2>Pontos Turísticos</h2>
-            <ul>
-                <li><strong>Pórtico de entrada</strong> – Construído em pedra basalto, recebe os visitantes com um toque histórico.</li>
-                <li><strong>Gôndola Veneziana</strong> – Símbolo da ligação cultural com a Itália.</li>
-                <li><strong>Casas de Pedra</strong> – Construções preservadas como patrimônio histórico.</li>
-                <li><strong>Igreja Matriz</strong> – Um dos cartões-postais da comunidade.</li>
-                <li><strong>Santuário de Nossa Senhora de Caravaggio</strong> – Importante destino religioso e de romarias.</li>
-            </ul>
-        </section>
-
-        <!-- Curiosidades -->
-        <section class="curiosidades">
-            <h2>Curiosidades</h2>
-            <div class="cards-curiosidades">
-                <div class="card">
-                    <h3>Tradições</h3>
-                    <p>Mais de 95% dos moradores são descendentes de italianos.</p>
-                </div>
-                <div class="card">
-                    <h3>Gastronomia</h3>
-                    <p>Capital Nacional da Gastronomia Típica Italiana.</p>
-                </div>
-                <div class="card">
-                    <h3>Natureza</h3>
-                    <p>A região possui rios e cachoeiras de água cristalina.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Mapa -->
-        <section class="mapa">
-            <h2>Onde Estamos</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.671140122456!2d-53.8089487!3d-25.6593364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f123e9b83b2be9%3A0xf93e7166e47f1f7f!2sCapela%20S%C3%A3o%20Crist%C3%B3v%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1718629400000!5m2!1spt-BR!2sbr" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </section>
-
-        <!-- Chamada para ação -->
-        <section class="associe-se">
-            <h2>Faça Parte da Nossa História!</h2>
-            <p>Associe-se à Comunidade Nova Veneza e ajude a preservar nossa cultura e tradições.</p>
-            <a href="formulario.html" class="btn-associar">Quero me associar</a>
-        </section>
-
-    </main>
-
-    <!-- Rodapé -->
-    <footer class="footer">
-        <p>&copy; 2025 Comunidade Nova Veneza - Todos os direitos reservados.</p>
-    </footer>
+        </div>
+    </section>
 
 </body>
 </html>
