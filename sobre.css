@@ -1,8 +1,7 @@
-/* Estilos específicos da página Sobre */
-
 .sobre {
     padding: 60px 20px;
     text-align: center;
+    background: #f9f9f9;
 }
 
 .sobre h1 {
@@ -19,9 +18,46 @@
     color: #555;
 }
 
-/* Botão associar */
+.pontos-turisticos {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.pontos-turisticos h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.pontos-turisticos p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.05em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.historia {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.historia h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.historia p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.05em;
+    line-height: 1.6;
+    color: #555;
+}
+
 .associar {
-    background-color: var(--primary-color); /* mesma cor do cabeçalho */
+    background-color: var(--primary-color);
     color: #fff;
     padding: 50px 20px;
     text-align: center;
@@ -46,10 +82,10 @@
     background: #eee;
 }
 
-/* Galeria */
 .galeria {
     padding: 60px 20px;
     text-align: center;
+    background: #fff;
 }
 
 .galeria h2 {
@@ -64,7 +100,7 @@
 
 .galeria-grid img {
     width: 100%;
-    height: 200px; /* aumentei um pouco para ficar maior */
+    height: 200px;
     object-fit: cover;
     border-radius: 8px;
 }
