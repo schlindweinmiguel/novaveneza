@@ -4,29 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notícias - Comunidade Nova Veneza</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="noticias.css">
 </head>
 <body>
 
+<!-- Cabeçalho igual ao index -->
 <header class="site-header">
     <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="Logo da Comunidade Nova Veneza">
+        </div>
         <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="sobre.html">Sobre a Comunidade</a></li>
                 <li><a href="eventos.html">Eventos</a></li>
-                <li><a href="noticias.html">Notícias</a></li>
+                <li><a href="noticias.html" class="ativo">Notícias</a></li>
                 <li><a href="servico.html">Serviços</a></li>
                 <li><a href="localizacao.html">Localização</a></li>
                 <li><a href="turismo.html">Turismo</a></li>
+                <li><a href="formulario.html">Contato</a></li>
             </ul>
         </nav>
-        <h1>Notícias da Comunidade Nova Veneza</h1>
-        <p>Fique por dentro de tudo o que acontece em nossa comunidade!</p>
     </div>
 </header>
 
 <main class="container">
+
+    <h1 class="titulo-principal">Notícias da Comunidade Nova Veneza</h1>
+    <p class="subtitulo">Fique por dentro de tudo o que acontece em nossa comunidade!</p>
 
     <!-- Últimas Notícias -->
     <section class="noticia-destaque">
@@ -43,7 +50,7 @@
         </article>
     </section>
 
-    <!-- Novas Notícias -->
+    <!-- Informes da Comunidade -->
     <section class="noticia-geral">
         <h2>📌 Informes da Comunidade</h2>
 
@@ -55,13 +62,13 @@
         <article class="card">
             <h3>🐱 Gato encontrado</h3>
             <p>É de alguém? Apareceu aqui em casa, bem mansinho. Acho que se perdeu.</p>
-            <img src="imagens/gato-encontrado.jpg" alt="Gato encontrado" style="max-width:300px; border-radius:8px;">
+            <img src="imagens/gato-encontrado.jpg" alt="Gato encontrado" class="imagem-card">
         </article>
 
         <article class="card">
             <h3>🐝 Curso de produção de pólen, própolis e cera alveolada</h3>
-            <p>De <strong>20 a 22/08</strong> no pavilhão da Igreja São Cirilo - Nova Veneza.  
-            Horário: <strong>8h às 16h30</strong> com almoço no local.  
+            <p>De <strong>20 a 22/08</strong> no pavilhão da Igreja São Cirilo - Nova Veneza.<br>
+            Horário: <strong>8h às 16h30</strong> com almoço no local.<br>
             Curso gratuito - apenas <strong>10 vagas</strong>.</p>
             <a href="https://wa.me/5546999865445" target="_blank" class="btn-contato">📲 Entrar em contato pelo WhatsApp</a>
         </article>
@@ -69,14 +76,15 @@
         <article class="card">
             <h3>👓 Óculos encontrado</h3>
             <p>Foi encontrado próximo ao cemitério. Valdir do ônibus encontrou. É seu?</p>
-            <img src="oculos.jpg" alt="Óculos encontrado" style="max-width:300px; border-radius:8px;">
+            <img src="imagens/oculos-encontrado.jpg" alt="Óculos encontrado" class="imagem-card">
             <a href="https://wa.me/5546999865445" target="_blank" class="btn-contato">📲 Entrar em contato</a>
         </article>
     </section>
 
 </main>
 
-<footer class="site-footer">
+<!-- Rodapé -->
+<footer class="footer">
     <p>&copy; 2025 Comunidade Nova Veneza. Todos os direitos reservados.</p>
 </footer>
 
