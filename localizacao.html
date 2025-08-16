@@ -1,59 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Localização - Comunidade Nova Veneza</title>
-    <link rel="stylesheet" href="localizacao.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Localização - Comunidade Nova Veneza</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="localizacao.css">
 </head>
 <body>
 
-    <!-- Cabeçalho -->
-    <header class="site-header">
-        <div class="container">
-            <h1 class="titulo-pagina">Localização</h1>
-        </div>
-    </header>
+  <!-- Cabeçalho padronizado -->
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png" alt="Logo da Comunidade Nova Veneza">
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre a Comunidade</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li><a href="noticias.html">Notícias</a></li>
+          <li><a href="localizacao.html" class="ativo">Localização</a></li>
+          <li><a href="formulario.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Conteúdo principal -->
-    <main class="container localizacao-section">
-        <section class="info-localizacao">
-            <h2>Onde Estamos</h2>
-            <p>A Comunidade Nova Veneza está localizada na zona rural do município de Capanema - PR. É uma comunidade acolhedora, marcada pela fé, cultura italiana e natureza exuberante ao redor.</p>
-            <p>Você pode nos visitar seguindo a estrada principal da Linha Baixo Cristo Rei, a cerca de 12 km do centro de Capanema.</p>
-        </section>
+  <!-- Conteúdo principal -->
+  <main class="container localizacao-section">
 
-        <section class="mapa-localizacao">
-            <h2>Mapa</h2>
-            <div class="mapa-iframe">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.623005354851!2d-53.807!3d-25.6587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f123e9b83b2be9%3A0xe7f5be7e27f1a12d!2sCapela%20S%C3%A3o%20Crist%C3%B3v%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1699543085005" 
-                    width="100%" 
-                    height="400" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        </section>
+    <section class="info-localizacao card">
+      <h2>📍 Onde Estamos</h2>
+      <p>A Comunidade Nova Veneza está localizada na zona rural de Capanema – PR, na Linha Nova Veneza , nas proximidades do balneário kau, a aproximadamente 14 km do centro da cidade.</p>
+    </section>
 
-        <section class="como-chegar">
-            <h2>Como Chegar</h2>
-            <ul>
-                <li>🛣️ De carro: Acesso pela PR-182 e estradas vicinais sinalizadas.</li>
-                <li>🚌 Transporte: Consulte a prefeitura local sobre linhas rurais ativas.</li>
-                <li>📍 Referência: Próximo à Capela São Cristóvão.</li>
-            </ul>
-        </section>
-    </main>
+    <section class="mapa-localizacao card">
+      <h2>🗺️ Mapa</h2>
+      <div class="mapa-iframe">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d?2d-53.8526255!3d-25.5887831!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v0000000000000"
+          width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <a href="https://maps.app.goo.gl/ECrJ85eAa3GQPB1H9" target="_blank" class="btn-mapa">
+        📲 Abrir no Google Maps
+      </a>
+    </section>
 
-    <!-- Rodapé -->
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2025 Comunidade Nova Veneza - Todos os direitos reservados.</p>
-        </div>
-    </footer>
+    <section class="como-chegar card">
+      <h2>🛣️ Como Chegar</h2>
+      <p>O acesso pode ser feito pela <strong>PR-281</strong>, entrando no primeiro asfalto à direita antes de chegar na Comunidade São Luiz.</p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Comunidade Nova Veneza. Todos os direitos reservados.</p>
+  </footer>
 
 </body>
 </html>
